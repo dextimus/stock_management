@@ -1,0 +1,23 @@
+.Products_table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 247);
+  border: 1px solid grey;
+  border-collapse: collapse;
+  width: fit-content;
+  margin: auto;
+}
+
+.Row {
+  border: 1px solid #ddd;
+}
+
+
+.Row table:nth-child(even) {
+  background-color: #e6e5e581;
+}
+
+.New_stock {
+  margin-bottom: 50px;
+  margin-right: 10%;
+  text-align: end;
+}
