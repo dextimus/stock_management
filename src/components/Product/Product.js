@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProductDetailsButton from "../Buttons/ProductDetailsButton";
 import "./Product.css";
 
@@ -15,7 +16,9 @@ const Product = ({ id, name, ean, type, weight, color, quantity, price }) => {
           <td className="Product-column_3">{quantity}</td>
           <td className="Product-column_3">{price}</td>
           <td className="Product-column_4">
-            <ProductDetailsButton productId={id} />
+            <Link to={`/products/${id}`}>
+              <ProductDetailsButton productId={id} />
+            </Link>
             <button className="Edit">Edit</button>
             <button className="Delete">Delete</button>
           </td>
