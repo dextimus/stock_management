@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ProductContext } from "../../context/context";
 import "./ProductDetails.css";
 
@@ -31,7 +32,9 @@ const ProductDetails = () => {
         <h3>Description:</h3>
         <div className="Info">{info || "Not found"}</div>
       </div>
-      <button className="Back">BACK TO PRODUCTS</button>
+      <Link to={"/"}>
+        <button className="Back">BACK TO PRODUCTS</button>
+      </Link>
     </div>
   );
 };
