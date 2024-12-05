@@ -8,7 +8,7 @@ const ProductContext = createContext({
 });
 
 const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState(data);
   const [detailProduct, setDetailProduct] = useState({});
 
   // Nustatome pradinę būseną tik kartą
